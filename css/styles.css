@@ -1,22 +1,67 @@
 /* Colors */
 
 :root {
- --clr-vLight-grayish-blue: hsl(240, 78%, 98%);
- --clr-light-grayish-blue: hsl(234, 14%, 74%);
- --clr-grayish-blue: hsl(233, 13%, 49%);
- --clr-dark-grayish-blue: hsl(232, 13%, 33%);
- --clr-Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+	--clr-vLight-grayish-blue: hsl(240, 78%, 98%);
+	--clr-light-grayish-blue: hsl(234, 14%, 74%);
+	--clr-grayish-blue: hsl(233, 13%, 49%);
+	--clr-dark-grayish-blue: hsl(232, 13%, 33%);
+	--clr-Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
 }
 
 /* Universal styling */
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
 html {
-    font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+	font-family: "Montserrat", sans-serif;
 }
 body {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 /* General styling */
 
+.container {
+	height: 100vh;
+	background-color: var(--clr-vLight-grayish-blue);
+	text-align: center;
+}
+.bg_image {
+	position: absolute;
+	top: -40px;
+	right: -190px;
+}
+
+/* Header Section */
+
+header h1 {
+	color: var(--clr-grayish-blue);
+}
+header p {
+	color: var(--clr-light-grayish-blue);
+}
+.price_choice {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+/* Cards Group Section */
+
+.cards_group {
+	color: var(--clr-dark-grayish-blue);
+	background-color: white;
+}
+
+/* Buttons */
+
+.btn {
+	outline: none;
+	border: none;
+	color: white;
+}
